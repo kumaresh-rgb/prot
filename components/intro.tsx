@@ -31,7 +31,7 @@ export default function Intro() {
             }}
           >
             <Image
-              src="https://i.ibb.co/k8Q265S/IMG-20230726-123820-861.jpg"
+              src="https://i.ibb.co/M8xpz2L/1000006471-modified.jpg"
               alt="Kumaresh"
               width="192"
               height="192"
