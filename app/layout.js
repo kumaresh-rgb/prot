@@ -1,4 +1,6 @@
 import { Analytics } from '@vercel/analytics/react';
+
+
 import Header from "@/components/header";
 import "./globals.css";
 import { Inter } from "next/font/google";
@@ -15,10 +17,8 @@ export const metadata = {
   description: "Ricardo is a Software developer Fresher Seeking For oppurnity.",
 };
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
+export default function RootLayout( {
+
 }) {
   return (
     <html lang="en" className="!scroll-smooth">
@@ -32,14 +32,14 @@ export default function RootLayout({
           <ActiveSectionContextProvider>
             <Header />
             {children}
-           
+            <Analytics />
             <Footer />
 
             <Toaster position="top-right" />
             <ThemeSwitch />
           </ActiveSectionContextProvider>
         </ThemeContextProvider>
-        <Analytics />
+        
       </body>
     </html>
   );
